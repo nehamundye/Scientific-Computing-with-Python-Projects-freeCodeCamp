@@ -27,7 +27,6 @@ class Rectangle:
         picture += "*" * self.width + '\n'
       return picture
       
-  
   def get_amount_inside(self, othershape):
     return (self.width // othershape.width) * (self.height // othershape.height)
   
