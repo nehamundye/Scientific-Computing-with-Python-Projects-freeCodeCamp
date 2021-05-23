@@ -22,10 +22,10 @@ class Category:
       total_budget = sum(all_amount)
     return total_budget
   
-  def transfer(self, amount, category):
+  def transfer(self, amount, othercategory):
     if self.check_funds(amount):
-      self.withdraw(amount, f"Transfer to {category.category}")
-      category.deposit(amount, f"Transfer from {self.category}")
+      self.withdraw(amount, f"Transfer to {othercategory.category}")
+      othercategory.deposit(amount, f"Transfer from {self.category}")
       return True
     return False
 
