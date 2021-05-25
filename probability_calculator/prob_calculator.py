@@ -34,7 +34,7 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
                 balls_drawn.remove(k)
                 count += 1
 
-    if count >= sum(expected_balls_list):
+    if count == sum(expected_balls_list):
         success_count += 1
   
   return success_count/num_experiments
